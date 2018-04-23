@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.co_operate.aly.co_operate.SigninActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="20"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/c3"
+                android:hint="search .."
+                android:padding="2dp"
+                android:textColor="@color/pink"
+                android:textColorHint="@color/pink"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_above="@+id/generalpostslist"
+                android:layout_toEndOf="@+id/buttonh"
+                android:layout_toRightOf="@+id/buttonh"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/a1"
+                android:onClick="out"
+                android:text="log out"
+                android:textColor="@color/pink" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonh"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border"
+            android:drawablePadding="-40dp"
+            android:drawableRight="@drawable/a2"
+            android:onClick="post"
+            android:text="post"
+            android:textColor="@color/pink"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/border_post"
+            android:ems="10"
+            android:hint="post here"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <ListView
+            android:id="@+id/generalpostslist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/buttonh"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout2"
+            android:text="Post here .."
+            android:textColor="@color/Black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_toLeftOf="@+id/buttonh"
+            android:layout_toStartOf="@+id/buttonh"
+            app:srcCompat="@drawable/c2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/generalpostslist"
+            android:layout_marginBottom="46dp"
+            android:layout_toEndOf="@+id/buttonh"
+            android:layout_toRightOf="@+id/buttonh"
+            app:srcCompat="@drawable/c1" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
